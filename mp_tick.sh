@@ -1,0 +1,1 @@
+while true ; do ./bin/python ./mp_tick.py & sleep 1; done
