@@ -1,9 +1,8 @@
-import json
-import requests
-import time
+import json, requests, time
+from config import settings
 
 def send_event(measurement_id, api_secret, event_name, event_params):
-    ss = "1693324901"
+    ss = settings['client_id']
     ts = str(time.time()).split(".")[0]
 
     url = "https://www.google-analytics.com/mp/collect?measurement_id=" + measurement_id + "&api_secret=" + api_secret
@@ -20,11 +19,10 @@ def send_event(measurement_id, api_secret, event_name, event_params):
 
 if __name__ == "__main__":
     ts = str(time.time()).split(".")[0]
-    measurement_id = "G-M2W6S3W2G0"
-    api_secret = "K0K8jYcfT5eZr6MhPbySkw"
+    measurement_id = settings['measurement_id']
+    api_secret = settings['api_secret']
     event_name = "fridge_door_open"
     event_params = {
-        # "user_id": "julien",
         "firmware_version": "20230901",
         "model": "Connected fridge",
         "brand": "Artic King",
