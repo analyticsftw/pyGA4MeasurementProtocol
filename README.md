@@ -21,6 +21,7 @@ The scripts in this repo send event data to the Google Analytics 4 property (and
 
 ## Usage
 - Make sure your `config.py` settings are set up.
+- In this example we are "emulating" events that could be triggered by a connected refrigerator. Examine `mp_event.py` to adjust.
 - Run the `mp_event.py` script with 
 `./bin/python/mp_event.py`
 - Looking at GA4 realtime reports will show the event being fired, along with event parameters and values
@@ -28,6 +29,7 @@ The scripts in this repo send event data to the Google Analytics 4 property (and
 
 
 Alternatively, running `mp_tick.sh` executes `mp_tick.py` every second and send an event name of either `tick` or `tock` based on whether the timestamp is even or odd.
+
  ![tick/tock events in GA4](assets/ga4_mp_tick_juliencoquet.png)
 
 ## Additional resources
