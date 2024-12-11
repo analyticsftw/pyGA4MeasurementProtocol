@@ -32,4 +32,4 @@ Alternatively, running `mp_tick.sh` executes `mp_tick.py` every second and send 
  ![tick/tock events in GA4](assets/ga4_mp_tick_juliencoquet.png)
 
 ## Additional resources
-- [Google Analytics 4 Measurement Protocol Reference]("https://developers.google.com/analytics/devguides/collection/protocol/ga4")
+- [Google Analytics 4 Measurement Protocol Reference](https://developers.google.com/analytics/devguides/collection/protocol/ga4)
