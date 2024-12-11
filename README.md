@@ -4,7 +4,6 @@ This repository provides a simple implementation of the Google Analytics 4 Measu
 The scripts in this repo send event data to the Google Analytics 4 property (and data stream) of your choice, with event names, user properties, and event parameters.
 
 ## Requirements
--
 - Clone the repository to your machine
 - Install Python 3.9 or later on your machine
 - Setup a virtual environment with: 
