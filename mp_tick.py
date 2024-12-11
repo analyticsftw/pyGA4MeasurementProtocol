@@ -3,7 +3,6 @@ from config import settings
 
 def send_event(measurement_id, api_secret, event_name, event_params):
     ss = settings['client_id'] #arbitrary client ID
-
     ts = str(time.time()).split(".")[0] #timestamp in seconds
 
     # Build the Measurement Protocol Endpoint URL with parameters
